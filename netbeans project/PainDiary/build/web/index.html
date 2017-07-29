@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Doctor Service</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/DoctorService.js"></script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>Enter Doctor_Id : </td>
+                <td><input type="text" id="docId" size="20"/></td>
+            </tr>
+            <tr>
+                <td>Enter Reg_Id : </td>
+                <td><input type="text" id="regId" size="20"/></td>
+            </tr>
+            <tr>
+                <td>Doctor_Fname : </td>
+                <td> <input type="text" id="docFname" size="20"/> </td>
+            </tr>
+            <tr>
+                <td>Doctor_Lname : </td>
+                <td> <input type="text" id="docLname" size="20"/></td>
+            </tr>
+            <tr>
+                <td>Doctor_Phone : </td>
+                <td> <input type="text" id="docPhone" size="20"/></td>
+            </tr>
+            <tr>
+                <td>Clinic_Address : </td>
+                <td> <input type="text" id="clinicAddress" size="20"/></td>
+            </tr>
+            <tr>
+                <td>CLinic_Phone </td>
+                <td> <input type="text" id="clinicPhone" size="20"/></td>
+            </tr>
+        </table>
+        <input type="button" value="Get All Doctor" onclick="getAllDoctor()"/>
+        <input type="button" value="Get Doctor" onclick="getDoctor()"/>
+        <input type="button" value="Add Doctor" onclick="addDoctor()"/>
+        <input type="button" value="Update Doctor" onclick="updateDoctor()"/>
+        <input type="button" value="Delete Doctor" onclick="deleteDoctor()"/>
+        <p id="output"></p>
+    </body>
+</html>

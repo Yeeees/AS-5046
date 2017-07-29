@@ -1,0 +1,20 @@
+Wed Apr 27 02:09:46 AEST 2016 : Apache Derby 网络服务器 - 10.11.1.2 - (1629631) 已启动并准备接受端口 1527 上的连接
+----------------------------------------------------------------
+Wed Apr 27 02:10:23 AEST 2016:
+正在使用类加载程序 sun.misc.Launcher$AppClassLoader@60e53b93 引导数据库
+目录 D:\NetBeans\project\5046as1\database\PainDiary 中的 Derby 版本 The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631) 实例 a816c00e-0154-5355-44c4-000030fb39a8
+已从 file:/C:/Program%20Files/Java/jdk1.8.0_51/db/lib/derby.jar 加载
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_51-b16
+user.dir=C:\Program Files\Java\jdk1.8.0_51\db
+os.name=Windows 8.1
+os.arch=amd64
+os.version=6.3
+derby.system.home=D:\NetBeans\project\5046as1\database
+数据库类加载程序已启动 - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Apr 27 02:35:39 AEST 2016：正在关闭 Derby 引擎
+----------------------------------------------------------------
+Wed Apr 27 02:35:39 AEST 2016:
+正在使用类加载程序 sun.misc.Launcher$AppClassLoader@60e53b93 关闭数据库目录 D:\NetBeans\project\5046as1\database\PainDiary 上的实例 a816c00e-0154-5355-44c4-000030fb39a8
+----------------------------------------------------------------
