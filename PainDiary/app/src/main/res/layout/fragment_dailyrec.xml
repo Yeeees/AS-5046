@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daily Record"
+        android:id="@+id/textView17"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="33dp"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarPain"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textView16"
+        android:max="10"
+        android:progress="5"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_alignEnd="@+id/painlvltext" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pain Level"
+        android:id="@+id/textView16"
+        android:textSize="20sp"
+        android:layout_below="@+id/textView17"
+        android:layout_alignStart="@+id/seekBarPain"
+        android:layout_marginTop="27dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/painlvltext"
+        android:textSize="20sp"
+        android:layout_marginEnd="29dp"
+        android:layout_alignTop="@+id/textView16"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pain Location"
+        android:id="@+id/textView19"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/seekBarPain"
+        android:layout_alignStart="@+id/seekBarPain" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/painloc_spinner"
+        android:entries="@array/painloc_array"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/textView19"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_alignEnd="@+id/painlvltext" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pain Trigger"
+        android:textSize="20sp"
+        android:id="@+id/textView20"
+        android:layout_below="@+id/painloc_spinner"
+        android:layout_alignStart="@+id/painloc_spinner" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/paintrig_sp"
+        android:layout_marginTop="36dp"
+        android:entries="@array/paintrag_array"
+        android:layout_below="@+id/textView20"
+        android:layout_alignStart="@+id/textView20"
+        android:layout_alignEnd="@+id/painlvltext" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter here"
+        android:id="@+id/pain_triggertxt"
+        android:layout_below="@+id/painloc_spinner"
+        android:layout_alignEnd="@+id/painlvltext" />
+
+    <RadioGroup
+        android:id="@+id/moodgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="133dp"
+        android:layout_y="368dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/paintrig_sp"
+        android:layout_alignStart="@+id/paintrig_sp"
+        android:layout_marginTop="39dp"
+        android:layout_alignEnd="@+id/pain_triggertxt"
+        android:weightSum="1">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Very Low"
+            android:textSize="20sp"
+            android:id="@+id/verylowR" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Low"
+            android:textSize="20sp"
+            android:id="@+id/lowR" />
+
+        <RadioButton
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:text="Average"
+            android:textSize="20sp"
+            android:id="@+id/averageR" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good"
+            android:textSize="20sp"
+            android:id="@+id/goodR" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VeryGood"
+            android:textSize="20sp"
+            android:id="@+id/verygoodR" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mood"
+        android:id="@+id/textView21"
+        android:textSize="20sp"
+        android:layout_below="@+id/paintrig_sp"
+        android:layout_alignStart="@+id/moodgroup" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/recordSub"
+        android:layout_below="@+id/moodgroup"
+        android:layout_toEndOf="@+id/textView19" />
+
+</RelativeLayout>

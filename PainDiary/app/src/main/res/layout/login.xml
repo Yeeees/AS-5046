@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Welcome To PainDiary"
+
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="14dp"
+        android:text="We do care about your health "
+        />
+
+    <EditText
+        android:id="@+id/loginName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+
+        android:ems="10"
+        android:hint=" User Name"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+    <EditText
+        android:id="@+id/logPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="40dp"
+        android:layout_above="@+id/loginButton"
+        android:layout_alignStart="@+id/loginName" />
+
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:layout_above="@+id/createNewAccountButton"
+        android:layout_marginBottom="60dp"
+        android:onClick="onClickLogInBtn"
+        android:layout_alignEnd="@+id/logPassword"
+        android:layout_alignStart="@+id/logPassword" />
+
+    <Button
+        android:id="@+id/createNewAccountButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:text="Create new account"
+        android:onClick="onClickCreateBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/loginButton"
+        android:layout_alignStart="@+id/loginButton" />
+</RelativeLayout>

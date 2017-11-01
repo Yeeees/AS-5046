@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature:"
+        android:textSize="20sp"
+        android:id="@+id/textView25"
+        android:layout_marginTop="73dp"
+        android:layout_below="@+id/textView33"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp"
+        android:layout_x="29dp"
+        android:layout_y="247dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/showTemp"
+        android:layout_alignTop="@+id/textView25"
+        android:layout_alignEnd="@+id/textView22"
+        android:layout_marginEnd="51dp"
+        android:layout_x="229dp"
+        android:layout_y="249dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity:"
+        android:textSize="20sp"
+        android:id="@+id/textView27"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/textView25"
+        android:layout_alignStart="@+id/textView25"
+        android:layout_x="33dp"
+        android:layout_y="205dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/showHumidity"
+        android:layout_alignBottom="@+id/textView27"
+        android:layout_alignStart="@+id/showTemp"
+        android:layout_x="229dp"
+        android:layout_y="207dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WindSpeed:"
+        android:textSize="20sp"
+        android:id="@+id/textView29"
+        android:layout_below="@+id/textView27"
+        android:layout_alignStart="@+id/textView27"
+        android:layout_marginTop="42dp"
+        android:layout_x="29dp"
+        android:layout_y="164dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/showSpeed"
+        android:layout_alignTop="@+id/textView29"
+        android:layout_alignStart="@+id/showHumidity"
+        android:layout_x="229dp"
+        android:layout_y="163dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pressure:"
+        android:textSize="20sp"
+        android:id="@+id/textView31"
+        android:layout_below="@+id/textView29"
+        android:layout_alignStart="@+id/textView29"
+        android:layout_marginTop="50dp"
+        android:layout_x="32dp"
+        android:layout_y="120dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/showPressure"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/textView31"
+        android:layout_alignStart="@+id/showSpeed"
+        android:layout_x="229dp"
+        android:layout_y="119dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today's Weather"
+        android:textSize="20sp"
+        android:id="@+id/textView33"
+        android:layout_below="@+id/textView18"
+        android:layout_centerHorizontal="true"
+        android:layout_x="120dp"
+        android:layout_y="63dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report"
+        android:id="@+id/textView18"
+        android:textSize="30sp"
+        android:layout_marginTop="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_x="143dp"
+        android:layout_y="15dp" />
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:id="@+id/line_graph"
+        android:layout_alignTop="@+id/textView31"
+        android:layout_toEndOf="@+id/showPressure"
+        android:layout_x="0dp"
+        android:layout_y="370dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Line Graph"
+        android:textSize="20sp"
+        android:id="@+id/textView23"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_x="3dp"
+        android:layout_y="337dp" />
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:id="@+id/pie_graph"
+        android:layout_marginTop="79dp"
+        android:layout_below="@+id/textView24"
+        android:layout_alignParentStart="true"
+        android:layout_x="0dp"
+        android:layout_y="613dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pie Graph"
+        android:id="@+id/textView24"
+        android:textSize="20sp"
+        android:layout_below="@+id/line_graph"
+        android:layout_alignParentStart="true"
+        android:layout_x="6dp"
+        android:layout_y="584dp" />
+</AbsoluteLayout></ScrollView>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">PainDiary</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="painloc_array">
+    <item>Back</item>
+    <item>Neck</item>
+    <item>Head</item>
+    <item>Knees</item>
+    <item>Hips</item>
+    <item>Abdomen</item>
+    <item>Elbows</item>
+    <item>Shoulders</item>
+    <item>Shins</item>
+    <item>Jaw</item>
+    <item>Facial</item>
+    <item>Others</item>
+</string-array>
+    <string-array name="paintrag_array">
+        <item>Sitting</item>
+        <item>Lying</item>
+        <item>Standing</item>
+        <item>Others</item>
+
+    </string-array>
+</resources>

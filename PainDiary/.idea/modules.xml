@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PainDiary.iml" filepath="$PROJECT_DIR$/PainDiary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commons-codec-1.3/commons-codec-1.3.iml" filepath="$PROJECT_DIR$/commons-codec-1.3/commons-codec-1.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gson-2.3/gson-2.3.iml" filepath="$PROJECT_DIR$/gson-2.3/gson-2.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jettison-1.1/jettison-1.1.iml" filepath="$PROJECT_DIR$/jettison-1.1/jettison-1.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/signpost-commonshttp4-1.2.1.2/signpost-commonshttp4-1.2.1.2.iml" filepath="$PROJECT_DIR$/signpost-commonshttp4-1.2.1.2/signpost-commonshttp4-1.2.1.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/signpost-core-1.2.1.2/signpost-core-1.2.1.2.iml" filepath="$PROJECT_DIR$/signpost-core-1.2.1.2/signpost-core-1.2.1.2.iml" />
+    </modules>
+  </component>
+</project>
